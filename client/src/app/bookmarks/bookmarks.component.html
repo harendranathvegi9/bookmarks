@@ -1,0 +1,17 @@
+<div class="section">
+  <div class="row">
+    <col-sm-12>
+      <h3>My Bookmarks</h3>
+    </col-sm-12>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let bookmark of bookmarks">
+          <span class="badge">{{ bookmark.status == 1 ? 'Active' : 'Archive' }}</span>
+          #{{ bookmark.id }} <a href="{{ bookmark.link }}" target="_blank">{{ bookmark.title }}</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
