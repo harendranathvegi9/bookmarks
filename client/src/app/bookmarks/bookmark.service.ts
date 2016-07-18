@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class BookmarkService {
-  public bookmarks;
+  public bookmarks
 
   constructor() {
     this.bookmarks = [
@@ -11,7 +11,8 @@ export class BookmarkService {
       {id: 3, title: 'My Github page', link: 'https://github.com/amitavroy', status: 0}
     ];
   }
+
   getBookmarks() {
-    return this.bookmarks;
+    return this.bookmarks
   }
 }

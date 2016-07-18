@@ -9,9 +9,10 @@ import { BookmarkService } from './bookmark.service';
   providers: [ BookmarkService ]
 })
 export class BookmarksComponent implements OnInit {
-  private bookmarks;
+  private bookmarks
+
   constructor(private bookmarkService: BookmarkService) {
-    this.bookmarks = bookmarkService.getBookmarks();
+    this.bookmarks = bookmarkService.getBookmarks()
   }
 
   ngOnInit() {
